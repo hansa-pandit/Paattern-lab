@@ -1,0 +1,29 @@
+<section class="sponsors-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                {% include '@atoms/03-headings/heading-1.twig'
+                    with{
+                    "heading1": heading1
+                }
+                %}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="sponsors">
+                    {% for sponsor in sponsors %}
+                        <div class="sponsors-logo">
+                            {% include '@atoms/04-images/image.twig'
+                                with{
+                                "img_src": sponsor.img_src
+                            }
+                            %}
+                        </div>
+                    {% endfor %}
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,37 @@
+<section class="image-heading-text-3column">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                {% include '@atoms/03-headings/heading-1.twig'
+                    with{
+                        "heading1": heading1
+                    }
+                %}
+            </div>
+        </div>
+        <div class="row">
+            {% block grid_content %}
+                {% for event in events %}
+                    <div class="col-md-4">
+                        {% include '@molecules/05-image-heading-text/image-heading-text.twig'
+                            with{
+                                "img_src": event.img_src,
+                                "linkUrl": event.linkUrl,
+                                "linkText": event.linkText,
+                                "paragraphContent": event.paragraphContent
+                            }
+                        %}
+                    </div>
+                {% endfor %}
+            {% endblock %}
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+

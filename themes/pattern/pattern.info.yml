@@ -1,0 +1,30 @@
+name: pattern
+type: theme
+description: A theme for implementing pattern lab
+package: themes
+core: 8.
+base theme: classy
+libraries:
+  - pattern/global-css
+  - pattern/global-js
+regions:
+  header: 'Header'
+  content: 'Main Content'
+  footer: 'Footer'
+
+component-libraries:
+  atoms:
+    paths:
+      - pattern-lab/source/_patterns/01-atoms
+  molecules:
+    paths:
+      - pattern-lab/source/_patterns/02-molecules
+  organisms:
+    paths:
+      - pattern-lab/source/_patterns/03-organisms
+  templates:
+    paths:
+      - pattern-lab/source/_patterns/04-templates
+  pages:
+    paths:
+      - pattern-lab/source/_patterns/05-pages

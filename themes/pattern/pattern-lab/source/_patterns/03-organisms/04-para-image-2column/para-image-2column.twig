@@ -1,0 +1,23 @@
+
+<div class="para-image-2column">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-6">
+                {% include '@molecules/04-heading-text/heading-text.twig'
+                    with{
+                        "heading1": heading1,
+                        "paragraphContent": paragraphContent
+                    }
+                %}
+            </div>
+            <div class="col-md-6">
+                {% include '@atoms/04-images/image.twig'
+                    with{
+                        "img_src": img_src
+                    }
+                %}
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,4 @@
+<div class="hansa">
+    {% include "@molecules/navigation/menu.twig" with {'lists': lists}  %}
+
+</div>

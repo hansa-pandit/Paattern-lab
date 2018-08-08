@@ -1,0 +1,18 @@
+<div class="image-heading-text">
+    {% include '@atoms/04-images/image.twig'
+        with{
+            "img_src": img_src
+        }
+    %}
+    {% include '@atoms/07-links/link.twig'
+        with{
+        "linkUrl": linkUrl,
+        "linkText": linkText
+        }
+    %}
+    {% include '@atoms/05-paragraph/paragraph.twig'
+        with{
+            "paragraphContent": paragraphContent
+        }
+    %}
+</div>

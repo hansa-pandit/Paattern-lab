@@ -1,0 +1,28 @@
+{
+  "lists": [
+    {
+      "title": "Home",
+      "url": "#"
+    },
+    {
+      "title": "About",
+      "url": "#"
+    },
+    {
+      "title": "Sessions",
+      "url": "#"
+    },
+    {
+      "title": "Sponsors",
+      "url": "#"
+    },
+    {
+      "title": "News",
+      "url": "#"
+    },
+    {
+      "title": "Venue",
+      "url": "#"
+    }
+  ]
+}

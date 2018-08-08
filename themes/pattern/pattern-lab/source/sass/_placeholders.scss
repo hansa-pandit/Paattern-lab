@@ -1,0 +1,30 @@
+%button-pink{
+	display: inline-block;
+	margin: 0 auto;
+	text-decoration: none;
+	background: #fd1f58;
+	color: #fff;
+	border-radius: 4px;
+	padding: .5rem;
+	min-width: 11rem;
+   	font-size: .95rem;
+   	transition: .4s ease;
+   	text-align: center;
+   	&:hover{
+   		background: #bf0635;
+   		transition: .4s ease;
+   		box-shadow: 1px 2px 2px #ccc;
+   	}
+
+
+}
+
+
+%small-title{
+	font-size: 1rem;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 1.7rem 0 .5rem 0;
+    font-weight: bold;
+    color: $blue;
+}

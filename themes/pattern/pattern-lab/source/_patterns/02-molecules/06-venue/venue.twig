@@ -1,0 +1,16 @@
+<div class="venue">
+    {% for text in texts %}
+        {% include '@atoms/05-paragraph/paragraph.twig'
+            with{
+            "paragraphContent": text.paragraphContent
+        }
+        %}
+    {% endfor %}
+    {% include '@atoms/02-buttons/button.twig'
+        with{
+            "link": link,
+            "text": text
+        }
+    %}
+</div>
+
