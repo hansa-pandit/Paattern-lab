@@ -10,20 +10,17 @@
             </div>
         </div>
         <div class="row">
-            {% block grid_content %}
                 {% for event in events %}
                     <div class="col-md-4">
                         {% include '@molecules/05-image-heading-text/image-heading-text.twig'
                             with{
                                 "img_src": event.img_src,
-                                "linkUrl": event.linkUrl,
-                                "linkText": event.linkText,
+                                "heading2": event.heading2,
                                 "paragraphContent": event.paragraphContent
                             }
                         %}
                     </div>
                 {% endfor %}
-            {% endblock %}
         </div>
     </div>
 </section>

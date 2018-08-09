@@ -1,0 +1,327 @@
+.keynote-speaker{
+	background: #f7f9fb;
+	.keynote-speaker-content{
+		h2{
+			text-align: left;
+		}
+		
+		.field__label{
+			display: none;
+		}
+	}
+}
+
+.views-sponsor-wrapper{
+
+	.view-sponsors{
+		.view-content{
+			display: flex;
+			flex-wrap: wrap;
+		}
+	}
+
+}
+
+.views-events-wrapper{
+	padding: 2rem 0 4rem 0;
+	.events-article{
+		.field{
+			.field__item{
+				p{
+					color: #92969e;
+				font-size: 1rem;
+
+				}
+				a{
+					@extend%small-title;
+				}
+				img{
+					max-width: 100%;
+					height: auto;
+				}
+			}
+			.field__label{
+				display:none;
+			}
+		}
+	}
+
+}
+
+.views-sponsor-wrapper{
+	.view-content{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+    	align-items: center;
+		.views-row{
+			min-width: 300px;
+    		text-align: center;
+    		margin: 2rem 0;
+			span{
+				display: block;
+			}
+			img{
+				max-width: 180px;
+				height: auto;
+			}
+		}
+	}
+}
+
+
+.footer-top-region{
+	background: #f5f9fe;
+	padding: .3rem 0;
+	.venue-wrapper{
+		padding-right: 10rem;
+
+		a.get-directions {
+		    background: #fff;
+		    display: inline-block;
+		    padding: .6rem 2rem;
+		    border-radius: 5px;
+		    box-shadow: 1px 3px 5px #e8eaea;
+		    color: #131313;
+		}
+
+	}
+	iframe{
+		width: 100%;
+	}
+}
+
+
+
+#block-indexdualbuttons{
+	padding: 4rem 0;
+	.field{
+		text-align: center;
+		width: 100%;
+		.field__label{
+			display: none;
+		}
+		.field__item {
+			a{
+				@extend%button-pink;		}
+		}
+	}
+
+}
+
+
+#block-singlebutton{
+	padding: 4rem 0;
+
+	.field{
+		text-align: center;
+		width: 100%;
+		a{
+				@extend%button-pink;		
+			}
+	}
+
+}
+
+
+#block-aboutcamp{
+	background: #f5f9fe;
+	padding: 4rem 0;
+	.field{
+		
+		.field__label{
+			display: none;
+		}
+		.field__item {
+			h3{
+			text-align: center;
+		    color: #1f74d2;
+		    font-size: 1rem;
+		    text-transform: uppercase;
+		    margin-bottom: 1.2rem;
+			}
+			p{
+			background: #fff;
+		    padding: 2rem 5.5rem;
+		    box-shadow: 0px 2px 7px #ccc;
+
+			}
+		}
+	}
+}
+
+.sponsor-benefits{
+	.container{
+		.row{
+			    padding: 2rem 0 6rem 0;
+			    .field{
+				.field__label{
+					display: none;
+				}
+				.field__item{
+					padding: 0 1rem;
+					h4{
+						font-size: .9rem;
+				    border-bottom: 2px solid #3d3d3e;
+				    color: #3d3d3e;
+				    text-transform: uppercase;
+				    padding-bottom: 1.2rem;
+				    font-weight: bold;
+					}
+				}
+			}
+		}
+	}
+	
+}
+
+#block-views-block-commitee-block-1{
+	.views-field{
+		.field-content{
+			img{
+				max-width: 100%;
+				height: auto;
+			}
+			a{
+				@extend%small-title;
+			}
+		}
+	}
+}
+
+#block-selectioncommitee{
+	text-align: center;
+}
+
+#block-views-block-commitee-block-1{
+padding:4rem 0;
+}
+
+.view-criteria{
+    padding-bottom: 3.5rem;
+	.views-view-grid{
+		width: 100%;
+	}
+	.field-content{
+		text-align: center;
+		margin: 2.4rem auto;
+		a{
+			@extend%button-pink;
+		}
+	}
+}
+
+.view-attractions{
+	.views-field{
+		.field-content{
+				img{
+				max-width: 100%;
+				height: auto;
+				border-radius: .5rem;
+				}
+				 a{
+					@extend%small-title;
+				}
+		}
+	}
+
+}
+#block-selectioncriteria{
+	text-align: center;
+}
+
+
+#block-contactus{
+	text-align: center;
+	h2{
+		margin-bottom: 2rem;
+	}
+	
+}
+
+.view-attractions{
+	padding-bottom: 6rem;
+}
+
+
+#block-newsandupdates{
+	text-align: center;
+	padding: 3rem 0;
+	p{
+		  width: 60%;
+		  margin: 0 auto;
+	}
+}
+
+#block-newspageimageblock{
+	padding: 5rem 0;
+	.field__label{
+		display: none;
+	}
+	img{
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+.front-news-carousel{
+	background: #99d0f7;
+    padding: 4.2rem 0 3rem 0;
+  .slide__content{
+  	    max-width: 1030px;
+	    margin: 0 auto;
+		.grid__content {
+		    background: #fff;
+		    border-radius: 7px;
+		    .slide__caption{
+		    	font-size: 1rem;
+			    text-align: center;
+			    color: $blue;
+		    }
+		}
+	}
+  	.slick__arrow{
+    	.slick-arrow{
+    		 &:before{
+    		 	color: #ed3b56;
+    		 }
+    	}
+  	}    
+}
+
+
+
+
+
+.news-page-carousel{
+    padding: 4.2rem 0 3rem 0;
+  .slide__content{
+	  	max-width: 1030px;
+	  	margin: 0 auto;
+	  	img{
+	  		    box-shadow: 4px 2px 11px #ccc;
+	  	}
+	  	a{
+	  		@extend%small-title;
+	  	}
+	}
+  	.slick__arrow{
+  		top: 30%;
+    	.slick-arrow{
+    		 &:before{
+    		 	color: #ed3b56;
+    		 }
+
+    	}
+  	}
+    
+}
+
+#block-news2block,
+#block-newsletterform {
+  text-align: center;
+  margin: 0 auto;
+}
+.toggle-ul{
+  display: none;
+}

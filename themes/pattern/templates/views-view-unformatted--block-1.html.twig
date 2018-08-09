@@ -19,6 +19,7 @@
 
 {#
 
+
 {% if title %}
     <h3>{{ title }}</h3>
 {% endif %}
@@ -34,54 +35,35 @@
     </div>
 {% endfor %}
 
+
 #}
 
 
-
-{#
-{{ kint(view) }}
-#}
-
-
-
-{#
-
-{% include "@organisms/05-image-heading-text-3column/image-heading-text-3column.twig"
-    with{
-        "img_src": "Hello",
-        "linkUrl": "#",
-        "linkText": "Sprints",
-        "paragraphContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-    }
-%}
-
-{{ kint() }}
-#}
-
-{#
-
-    {% block grid_content %}
-        {% for row in rows %}
-            {{ row.content }}
-        {% endfor %}
-    {% endblock %}
-#}
-
-
-
-{#
 
 
 {% set events = [] %}
 {% for row in rows %}
-    {% set events = events|merge([{ 'paragraphContent' : content.view.field.field_event_descrip, 'img_src' : "img source", 'linkUrl': "link", 'linkText' : "link text"}]) %}
+    {% set events = events|merge([{ 'paragraphContent' :  row.content['#row']._entity.field_event_descrip[0].value, 'img_src' :   file_url(row.content['#row']._entity.field_event_image.entity.fileuri), 'heading2':  row.content['#row']._entity.field_event_title[0].value}]) %}
+
+
 {% endfor %}
 
+{% include "@organisms/05-image-heading-text-3column/image-heading-text-3column.twig"
+    with {
+        "events": events
+    }
+%}
 
-{{ events }}
 
 
-{% include "@organisms/05-image-heading-text-3column/image-heading-text-3column.twig" with {"events":events} %}
+
+{#
+
+"heading_level": 4,
+"heading": row.content['#row']._entity.field_event_title[0].value,
+"image_url": file_url(row.content['#row']._entity.field_event_image.entity.fileuri),
+"paragraph_content": row.content['#row']._entity.body[0].value,
 #}
-
-content.view.field.field_event_descrip
+<div class="hansa">
+    {{  row.content['#row']._entity.field_event_tit[i].value|raw}}
+</div>

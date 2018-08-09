@@ -49,7 +49,7 @@
 
 {% set mainMenu = [] %}
 {% for item in items %}
-    {% set mainMenu = mainMenu|merge([{ 'title' : item.title, 'url' : item.url.toString() }]) %}
+    {% set mainMenu = mainMenu|merge([{ 'title' : item.title, 'url' : item.url.toString(), 'activeClass' : item.in_active_trail ? 'active' }]) %}
 {% endfor %}
 
 {% include '@molecules/02-navigation/menu.twig' with {"lists":mainMenu} only %}

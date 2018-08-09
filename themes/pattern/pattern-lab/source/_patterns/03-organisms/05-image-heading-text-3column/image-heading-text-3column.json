@@ -2,20 +2,17 @@
   "events": [
     {
       "img_src": "../../images/site-images/about-banner.jpg",
-      "linkUrl": "#",
-      "linkText": "Sprints",
+      "heading2": "heading2",
       "paragraphContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
       "img_src": "../../images/site-images/about-banner.jpg",
-      "linkUrl": "#",
-      "linkText": "After Party",
+      "heading2": "heading2",
       "paragraphContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
       "img_src": "../../images/site-images/about-banner.jpg",
-      "linkUrl": "#",
-      "linkText": "Sessions",
+      "heading2": "heading2",
       "paragraphContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     }
   ],

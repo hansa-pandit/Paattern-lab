@@ -1,3 +1,8 @@
-a{
-  color: red;
-}
+@import "bootstrap";
+@import "general";
+@import "variables";
+@import "placeholders";
+@import "header";
+@import "blocks";
+@import "footer";
+
